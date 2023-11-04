@@ -1,0 +1,263 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.Header{
+    width: 100%;
+    height: 80px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.HeaderLogoNav{
+    width: 65%;
+    height: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.HeaderLogo{
+    width: 15%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.HeaderLogo img{
+    width: 80%;
+    height: 90%;
+    object-fit: contain;
+}
+.Nav{
+    width: 70%;
+    height: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.Nav nav{
+    font-weight: 600;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    text-transform: uppercase;
+}
+.SignSearch{
+    width: 30%;
+    height: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.Search{
+    width: 80%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+.Search input{
+    width: 80%;
+    height: 50%;
+    padding-inline: 10px;
+    outline: none;
+    border: none;
+    background: lightgrey;
+   border-bottom-left-radius: 5px;
+   border-top-left-radius: 5px;
+    
+}
+.searchlogo{
+    width: 15%;
+    height: 50%;
+    background: whitesmoke;
+    border-bottom-right-radius: 5px;
+    border-top-right-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.SignSearch span{
+    text-transform: uppercase;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+.Hero{
+    width: 100%;
+    height: 95vh;
+    background-image: url('../assets/herobg.jpeg');
+    background-size: contain;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding-inline: 60px;
+}
+.halloween{
+    width: 45%;
+    height: 40%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+}
+.hallo{
+    width: 100%;
+    height: 120px;
+    background-image: url('../assets/hallooween.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.halloween span{
+    font-size: 17px;
+    font-weight: 600;
+    color: white;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+.halloween button{
+    padding: 14px 60px;
+    background: #01d0ff;
+    font-weight: 600;
+    border: none;
+    border-radius: 15px;
+}
+.Card_Container{
+    width: 100%;
+    height: max-content;
+}
+.Card_wrapper{
+    width: 100%;
+    height: auto;
+    background: lightgray;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 20px 30px;
+   
+   
+}
+.Card{
+    width: 23.5%;
+    height: 30rem;
+    background: white;
+    margin-top: 10px;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+.Card_img{
+    width: 100%;
+    height: 50%;
+    object-fit: contain;
+}
+.Card_img img{
+    width: 100%;
+    height: 100%;
+}
+.Card_Content{
+    width: 100%;
+    height: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+.Card_Content h6{
+    font-size: 18px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+
+}
+.Card_Content p{
+
+    text-align: center;
+}
+.Card_Content span{
+    text-decoration: underline;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 17px;
+}
+.New{
+ width: 35%;
+ height: 15%;
+ background: #000;
+ color: white;
+ border-radius: 10px;
+ display: flex;
+ justify-content: center;
+ align-items: center;
+ text-transform: uppercase;
+ cursor: pointer;
+ padding-inline: 10px;
+}
+
+@media screen and (max-width: 768px) {
+   .Nav{
+    display: none;
+   }
+   .SignSearch{
+    display: none;
+   }
+   .Hero{
+    flex-direction: column;
+    justify-content: center;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+   }
+   .halloween{
+    width: 20rem;
+    height: 60%;
+   }
+   .halloween span{
+    text-align: center;
+   }
+   .halloween button{
+    padding: 10px 20px;
+    color: white;
+    cursor: pointer;
+}
+   .Card{
+    width: 45%;
+    margin: 10px 5px;
+   }
+   
+}
+
+@media screen and (max-width: 425px) {
+
+    .Card{
+        width: 80%;
+    }
+    
+}
+
+@media screen and (max-width : 375px) {
+
+    .HeaderLogo{
+        width: 60%;
+    }
+
+    .Hero{
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+        flex-direction: column;
+        justify-content: center;
+    }
+    .Nav{
+        display: none;
+    }
+    .SignSearch{
+        display: none;
+    }
+    .halloween{
+        width: 18rem;
+        height: 50%;
+    }
+    .halloween span{
+        text-align: center;
+    }
+    .halloween button{
+        padding: 12px 20px;
+        color: white;
+    }
+    .Card{
+        width: 95%;
+        margin-bottom: 10%;
+    }
+}
